@@ -1,0 +1,9 @@
+def compound_interest(principal,rate,time):
+    return principal * (1 + rate/100)**time-principal
+
+principal = float(input("Enter the principal of the compound interest: "))
+rate = float(input("Enter the rate of the compound interest: "))
+time = float(input("Enter the time of the compound interest: "))
+
+interest = compound_interest(principal,rate,time)
+print(f"The compound interest  is {interest} .")

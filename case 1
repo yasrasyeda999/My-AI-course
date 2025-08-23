@@ -1,0 +1,8 @@
+##conversion of temperature from celcius to fah# Celsius to Fahr
+
+def celcius_to_fahrenhiet(celcius):
+    fahrenhiet = (celcius * 9/5) + 32
+    return fahrenhiet
+c = float(input("enter a temperature in celcius:"))
+f = celcius_to_fahrenhiet(c)
+print(f"{c}°C is equal to {f:.2f}°F")

@@ -1,0 +1,13 @@
+# Get input from the user
+n = int(input("Enter the total number of candies: "))
+k = int(input("Enter the number of students: "))
+
+# Calculate how many candies each student gets
+candies_per_student = n // k
+
+# Calculate how many candies are left undistributed
+remaining_candies = n % k
+
+# Display the results
+print(f"Each student gets {candies_per_student} candies.")
+print(f"{remaining_candies} candies remain undistributed.")

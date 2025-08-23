@@ -1,0 +1,13 @@
+selling_price = float(input("enter the selling price: "))
+cost_price = float(input("enter the cost price: "))
+amount = selling_price - cost_price
+if selling_price > cost_price:
+  print("profit")
+  print(f"The profit of amount is Rs {amount}")
+elif selling_price < cost_price:
+  print("loss")
+  print(f"the loss of amount is Rs {amount}")
+else:
+  print("no profit no loss")
+  
+
