@@ -1,6 +1,6 @@
 import numpy as np
 
-price,acre_lot,city,house_size,brokered_id = np.genfromtxt('C:\\Users\\AA laptops\\Documents\\GitHub\\My-AI-course\\RealEstate-USA.csv', delimiter=',', usecols=(2,5,7,10), dtype=[('price', 'f8'), ('acre_lot', 'f8'), ('city', 'U20'), ('house_size', 'f8')], skip_header=1, unpack=True)
+price,acre_lot,house_size,city,brokered_id = np.genfromtxt('C:\\Users\\AA laptops\\Documents\\GitHub\\My-AI-course\\RealEstate-USA.csv', delimiter=',', usecols=(2,5,7,10),  skip_header=0, unpack=True , invalid_raise=False)
 
 
 print(price)
@@ -11,8 +11,6 @@ print(house_size)
 
 #performing operations on price
 
-
-# Task 02
 print("Mean of Price is:",np.mean(price))
 print("Median of Price is:",np.median(price))
 print("AVG of Price is",np.average(price))

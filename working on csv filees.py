@@ -1,7 +1,6 @@
 import numpy as np
 
 broker_id,price,city,house_size=np.genfromtxt('D:\AI\Assignment 01 Week 3\RealEstate-USA.csv',delimiter=',',dtype=None,skip_header=1,usecols=(0,2,7,10),unpack=True)
-# Task 01
 
 print(broker_id)
 print(price)
